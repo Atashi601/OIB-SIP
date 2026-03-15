@@ -1,62 +1,111 @@
-# OIB-SIP – Python Programming Internship
+# 💻 OIB-SIP – Python Programming Internship
 
-This repository contains the projects completed during my Python Programming Internship at Oasis Infobyte.
+This repository contains all the tasks and projects completed during my **Python Programming Internship at Oasis Infobyte (OIB-SIP)**.
 
----
-
-## 📂 Projects
-
-<details>
-<summary>▶ Task 1 – Voice Assistant</summary>
-
-### Beginner Version
-Basic voice assistant with simple commands.
-
-File:
-- beginner_voice_assistant.py
-
-### Advanced Version
-Voice assistant using speech recognition and text-to-speech.
-
-File:
-- advanced_voice_assistant.py
-
-</details>
+The internship focuses on building practical Python projects to strengthen programming concepts and problem-solving skills through real-world applications.
 
 ---
 
-<details>
-<summary>▶ Task 2 – BMI Calculator</summary>
+## 📌 Internship Details
 
-### Beginner Version
-Simple CLI BMI calculator.
-
-File:
-- beginner_bmi_calculator.py
-
-### Advanced Version
-GUI BMI calculator using Tkinter.
-
-File:
-- advanced_bmi_calculator.py
-
-</details>
+* **Internship Program:** Python Programming Internship
+* **Organization:** Oasis Infobyte
+* **Intern:** Atashi Dey
+* **Duration:** February 2025 – March 2025
+* **Mode:** Remote
 
 ---
 
-<details>
-<summary>▶ Task 3 – Random Password Generator</summary>
+## 📂 Projects Completed
 
-### Beginner Version
-Generates random passwords using Python.
+### 🔹 Task 1 – Voice Assistant
 
-File:
-- beginner_password_generator.py
+A Python voice assistant that understands voice commands and responds using text-to-speech.
 
-### Advanced Version
-GUI password generator with user input.
+**Features**
 
-File:
-- advanced_password_generator.py
+* Voice command recognition
+* Text-to-speech responses
+* Basic command execution
 
-</details>
+**Technologies Used**
+
+* Python
+* SpeechRecognition
+* Pyttsx3
+* Requests
+
+---
+
+### 🔹 Task 2 – BMI Calculator
+
+A Python program that calculates **Body Mass Index (BMI)** using a user's height and weight.
+
+**Features**
+
+* Calculates BMI value
+* Displays BMI category
+
+**Technologies Used**
+
+* Python
+* Command Line Interface
+
+---
+
+### 🔹 Task 3 – Random Password Generator
+
+A password generator that creates secure random passwords based on user-defined length.
+
+**Features**
+
+* Generates strong passwords
+* Uses letters, numbers, and symbols
+
+**Technologies Used**
+
+* Python
+* Random module
+* String module
+
+---
+
+## 🧠 Skills Gained
+
+During this internship, I improved my knowledge in:
+
+* Python programming
+* GUI development using Tkinter
+* Voice recognition systems
+* Writing clean and structured code
+* GitHub project management
+
+---
+
+## ▶️ How to Run the Projects
+
+1. Make sure Python 3 is installed
+2. Clone the repository
+
+git clone https://github.com/Atashi601/OIB-SIP.git
+
+3. Navigate to the project folder
+
+cd OIB-SIP
+
+4. Run the Python file
+
+python filename.py
+
+---
+
+## 📜 License
+
+This project is available under the **MIT License**.
+
+---
+
+## 👩‍💻 Author
+
+**Atashi Dey**
+Python Programming Intern – Oasis Infobyte
