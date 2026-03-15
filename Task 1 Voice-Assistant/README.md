@@ -1,22 +1,43 @@
-# Voice Assistant Project
+# Task 1 – Voice Assistant
 
-This project contains two versions:
+This project is part of the **Python Programming Internship** at Oasis Infobyte.
+
+The Voice Assistant is a Python program that can respond to user commands using voice or text. It can perform simple tasks like greeting the user, telling the current time, and searching information.
+
+---
 
 ## Beginner Version
-- Responds to Hello
-- Tells Time
-- Tells Date
-- Searches the Web
+
+The beginner version is a simple voice assistant program that performs basic tasks.
+
+### Features
+- Responds to greetings
+- Tells the current time
+- Simple command-based interaction
+
+File:
+- beginner_voice_assistant.py
+
+---
 
 ## Advanced Version
-- Weather Updates (API)
-- Reminder Feature
-- Wikipedia Search
-- Web Search
-- Improved Command Handling
+
+The advanced version uses additional Python libraries to create a more interactive assistant.
+
+### Features
+- Speech recognition
+- Text-to-speech response
+- Wikipedia search
+- More interactive commands
+
+File:
+- advanced_voice_assistant.py
+
+---
 
 ## Technologies Used
+
 - Python
 - SpeechRecognition
-- pyttsx3
-- Requests
+- Pyttsx3
+- Wikipedia module
