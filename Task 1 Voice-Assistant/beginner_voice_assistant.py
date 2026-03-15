@@ -1,48 +1,56 @@
 import speech_recognition as sr
 import pyttsx3
-import webbrowser
 import datetime
+import webbrowser
 
-# Initialize speech engine
 engine = pyttsx3.init()
+recognizer = sr.Recognizer()
 
 def speak(text):
+    print("Assistant:", text)
     engine.say(text)
     engine.runAndWait()
 
-def take_command():
-    recognizer = sr.Recognizer()
+def listen():
     with sr.Microphone() as source:
         print("Listening...")
         recognizer.adjust_for_ambient_noise(source)
         audio = recognizer.listen(source)
 
     try:
-        print("Recognizing...")
         command = recognizer.recognize_google(audio)
         print("You said:", command)
         return command.lower()
     except:
-        speak("Sorry, I did not understand.")
+        speak("Sorry, I didn't understand.")
         return ""
 
-speak("Voice Assistant Activated")
+def main():
+    speak("Hello! I am your basic voice assistant.")
 
-while True:
-    query = take_command()
+    while True:
+        command = listen()
 
-    if "time" in query:
-        current_time = datetime.datetime.now().strftime("%H:%M:%S")
-        speak("Current time is " + current_time)
+        if "hello" in command:
+            speak("Hello! How can I help you?")
 
-    elif "open google" in query:
-        webbrowser.open("https://www.google.com")
-        speak("Opening Google")
+        elif "time" in command:
+            current_time = datetime.datetime.now().strftime("%H:%M")
+            speak(f"The time is {current_time}")
 
-    elif "open youtube" in query:
-        webbrowser.open("https://www.youtube.com")
-        speak("Opening YouTube")
+        elif "date" in command:
+            current_date = datetime.datetime.now().strftime("%d %B %Y")
+            speak(f"Today's date is {current_date}")
 
-    elif "exit" in query:
-        speak("Goodbye!")
-        break
+        elif "search" in command:
+            speak("What should I search?")
+            query = listen()
+            webbrowser.open(f"https://www.google.com/search?q={query}")
+            speak("Here are the search results.")
+
+        elif "exit" in command:
+            speak("Goodbye!")
+            break
+
+if __name__ == "__main__":
+    main()
